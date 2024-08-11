@@ -16,6 +16,15 @@
 @returns {number}
 */
 
-module.exports = function(list){
+module.exports = function countNodes(list){
   //Solution goes here
+  // some type of linked list or binary search?
+  if(!list){
+    // base case
+    return 0
+  }
+  // recursive call
+  // something is off in the recursive call i don't know
+  return 1 + countNodes(list.left) + countNodes(list.right);
+  
 }
